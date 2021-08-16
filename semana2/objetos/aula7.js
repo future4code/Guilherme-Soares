@@ -1,8 +1,10 @@
 //      EXERCÍCIOS DE INTERPRETAÇÃO DE CÓDIGO       //
 
 //1)
-//a) Será impresso: "Matheus Nachtergaele", "Matheus Nachtergaele" e {canal: "Globo", horario: "14h"}
-
+//a) Será impresso: 
+//"Matheus Nachtergaele"
+//"Virginia Cavendish"
+//{canal: "Globo", horario: "14h"}
 //2)
 //a) Será impresso: nome: "Juca", idade: 3, raca: "SRD"
 //  nome: "Juba", idade: 3, raca: "SRD"
@@ -23,67 +25,57 @@ const euzin = {
     nome: "Guilherme",
     apelidos: ["Gui", "Guizão", "Guiga"]
 }
-console.log(`Eu sou ${euzin.nome}, mas pode me chamar de: ${euzin.apelidos[0]},
- ${euzin.apelidos[1]} ou ${euzin.apelidos[2]}!`)
 
+function imprimeEuzin (objeto) {
+    console.log(`Eu sou ${objeto.nome}, mas pode me chamar de: ${objeto.apelidos[0]},
+    ${objeto.apelidos[1]} ou ${objeto.apelidos[2]}!`)
+}
+imprimeEuzin(euzin)
  //b)
 
  const novoEuzin = {
     ...euzin,
-    nome: "Guilherme",
     apelidos: ["Guizada", "Guizord", "Guirila"]
  }
- console.log(`Eu sou ${novoEuzin.nome}, mas pode me chamar de: ${novoEuzin.apelidos[0]},
- ${novoEuzin.apelidos[1]} ou ${novoEuzin.apelidos[2]}!`)
+
+ imprimeEuzin(novoEuzin)
 
 //2)
-// const pessoa1 = {
-//     nome: "Guilherme",
-//     idade: 24,
-//     profissao: "Estudante"
-
-// }
-
-// const pessoa2 = {
-//     nome: "Mirtes",
-//     idade: 56,
-//     profissao: "Autônoma"
-
-// }
-
-//   minhaFuncao(pessoa1) {
-//    nomePessoa1 = pessoa1.nome,
-//    numCaracteres1 = pessoa1.nome.length(),
-//    idade1 = pessoa1.idade,
-//    profissao1 = pessoa1.profissao,
-//    profissao1Length = pessoa1.profissao.length(),
-
-//    nomePessoa2 = pessoa2.nome,
-//    numCaracteres2 = pessoa2.nome.length(),
-//    idade2 = pessoa2.idade,
-//    profissao2 = pessoa2.profissao,
-//    profissao2Length = pessoa2.profissao.length()
-
-//    return (nomePessoa1, numCaracteres1, idade1, profissao1, profissao1Length)
-
-// }
-// console.log(pessoa1)
-
-//3)
-
-const carrinho = []
-
-const frutasSacolao = {
-    fruta1: "Morango",
-    disponibilidadeMorango: true ,
-    fruta2: "Abacaxi", 
-    disponibilidadeAbacaxi: true ,
-    fruta3: "Maracujá",
-    disponibilidadeMaracuja: true
+const pessoa1 = {
+    nome: "Guilherme",
+    idade: 24,
+    profissao: "Estudante"
 }
 
-// function funcaoFruta (frutasSacolao){
-//     return carrinho.push(frutasSacolao)
-// }
+  function imprimeInformacoes(usuario) {
+   return [usuario.nome, usuario.nome.length, usuario.idade, usuario.profissao, usuario.profissao.length ]
+}
+console.log(imprimeInformacoes(pessoa1))
 
-console.log(frutasSacolao)
+// //3)
+
+let carrinho = []
+
+const morango = {
+    fruta: "Morango",
+    disponibilidadeMorango: true ,
+}
+
+const abacaxi = {
+    fruta: "Abacaxi", 
+    disponibilidadeAbacaxi: true ,
+}
+
+const maracuja = {
+    fruta: "Maracujá", 
+    disponibilidadeMaracujá: true ,
+}
+
+function frutaNoCarrinho (fruta) {
+    carrinho.push(fruta)
+}
+frutaNoCarrinho(morango)
+frutaNoCarrinho(abacaxi)
+frutaNoCarrinho(maracuja)
+
+console.log(carrinho)
