@@ -1,0 +1,30 @@
+header {
+
+}
+body {
+    display:flex;
+    bottom: 100;
+    flex-direction: column;
+    align-items:center;
+    background-image: url(./img/fundo-azul.jpg);
+    background-size: cover;
+    image: url(./img/segurando-a-chave-removebg-preview.png)
+}
+
+.cabecalho {
+    color:wheat;
+    border: 2px rgb(255, 2, 2);
+}
+
+.cor-padrao-fonte {
+    color:white;
+    border: 2px rgb(137, 211, 240);
+}
+
+footer{
+    bottom: 0;
+    position: fixed;
+    width: center;
+    text-align: center;
+}
+
