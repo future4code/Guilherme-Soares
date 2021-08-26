@@ -20,6 +20,20 @@
 
 //1)
 
+
+const bichinhos = Number(prompt("Quantos bichinhos você tem?!"))
+console.log(`Legal! Você tem ${bichinhos} pets!`)
+if(bichinhos === 0) {console.log("Que pena!Você pode adotar um pet!")}
+   if(bichinhos > 0) {
+       let arrayBichinhos = []
+       for(let i = 0; i < bichinhos; i++){
+           const nomeDosBichinhos = prompt("Qual o nome do(s) pet(s)?")
+           arrayBichinhos.push(nomeDosBichinhos)
+       }
+       console.log("O os nomes deles são:", arrayBichinhos)
+   }
+   
+
  const bichinhos = Number(prompt("Quantos bichinhos você tem?!"))
  console.log(`Legal! Você tem ${bichinhos} pets!`)
 if(bichinhos === 0) {console.log("Que pena!Você pode adotar um pet!")}
@@ -33,26 +47,49 @@ if(bichinhos === 0) {console.log("Que pena!Você pode adotar um pet!")}
     }
     
 
+
 //2)
 //a) 
 const arrayOriginal = [10, 25, 36, 41, 180, 213]
 function imprimeArrayOriginal (arrayOriginal) {
+
+   for(let valor of arrayOriginal){
+       console.log(valor)
+   }
+
     for(let valor of arrayOriginal){
         console.log(valor)
     }
+
 }
 imprimeArrayOriginal(arrayOriginal)
 
 //b)
 function imprimeArrayOriginal (arrayOriginal) {
+
+   for(let valor of arrayOriginal){
+       console.log(valor / 10)
+   }
+
     for(let valor of arrayOriginal){
         console.log(valor / 10)
     }
+
 }
 imprimeArrayOriginal(arrayOriginal)
 
 //c)
 function imprimeArrayDeNumeroPar (arrayOriginal) {
+
+   let arrayDeNumeroPar = []
+   for(let valor of arrayOriginal){
+       if(valor % 2 === 0){
+           arrayDeNumeroPar.push(valor)
+       }
+       
+   }
+   console.log(arrayDeNumeroPar)
+
     let arrayDeNumeroPar = []
     for(let valor of arrayOriginal){
         if(valor % 2 === 0){
@@ -61,23 +98,47 @@ function imprimeArrayDeNumeroPar (arrayOriginal) {
         
     }
     console.log(arrayDeNumeroPar)
+
 }
 imprimeArrayDeNumeroPar (arrayOriginal)
 
 //d)
 function imprimirArrayDeStrings (arrayOriginal){
+
+  let arrayDeStrings = []
+  let index = 0 
+   for(let valor of arrayOriginal){
+       arrayDeStrings.push(`O elemento do índex ${index} é o número ${valor}.`)
+       index++
+   }
+   console.log(arrayDeStrings)
+
    let arrayDeStrings = []
    let index = 0 
     for(let valor of arrayOriginal){
         arrayDeStrings.push(`O elemento do índex ${index} é o número ${valor}.`)
         index++
     }
-    console.log(arrayDeStrings)
+
 }
 imprimirArrayDeStrings(arrayOriginal)
 
 //e)
 function pegarMaiorOuMenorNumero (arrayOriginal){
+
+   let maiorNum = 0
+   let menorNum = Infinity
+   for(let i = 0; i < arrayOriginal.length; i++){
+
+       if(arrayOriginal[i] < menorNum){
+           menorNum = arrayOriginal[i]
+       }else if(arrayOriginal[i] > maiorNum){
+           maiorNum = arrayOriginal[i]
+       }
+   }
+   console.log(`O maior número é: ${maiorNum}.`)
+   console.log(`O menor número é: ${menorNum}.`)
+=======
     let maiorNum = 0
     let menorNum = Infinity
     for(let i = 0; i < arrayOriginal.length; i++){
@@ -90,5 +151,6 @@ function pegarMaiorOuMenorNumero (arrayOriginal){
     }
     console.log(`O maior número é: ${maiorNum}.`)
     console.log(`O menor número é: ${menorNum}.`)
+
 }
 pegarMaiorOuMenorNumero(arrayOriginal)
