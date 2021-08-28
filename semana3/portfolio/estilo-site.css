@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+    /* background-color: rgba(0, 0, 0, 0.705); */
+    background-image: url(./imgs/fundo-escuro-3.jpg);
+}
+
+.header {
+    height: 80px;
+}
+
+.menu {
+    margin: 50px; 
+}
+
+.menu a{
+    /* background-color: rgba(65, 57, 57, 0.623); */
+    color: rgb(245, 206, 101);
+    border: groove rgb(245, 245, 245, 0.2);
+    padding: 20px;
+    margin: 50px;    
+}
+
+#selected {
+    color: whitesmoke;
+    border: groove whitesmoke
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    display: inline;
+    color: rgb(235, 198, 96);
+    font-size: 22px;
+    font-family:'Courier New', Courier, monospace;
+    margin: 100px
+}
+
+
+.footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer a {
+    color: rgb(245, 206, 101);
+    border: groove rgb(245, 245, 245, 0.2);
+    padding: 20px;
+    margin: 0px 100px 0px 100px; 
+
+}
+
+#foto-de-perfil {
+    height: 300px;
+    margin: 50px 0px 0px 50px
+}
+
+.corLista {
+    color: whitesmoke;
+}
+
+.textoInicial {
+    margin-left: 500px;
+}
