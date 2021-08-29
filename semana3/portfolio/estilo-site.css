@@ -1,45 +1,44 @@
 * {
-    margin: 0px;
-    /* background-color: rgba(0, 0, 0, 0.705); */
-    background-image: url(./imgs/fundo-escuro-3.jpg);
+    background-color: black;
+    margin: 0px;    
 }
 
 .header {
-    height: 80px;
+    background-color: black;
 }
 
 .menu {
-    margin: 50px; 
+    margin: 0px
 }
 
 .menu a{
-    /* background-color: rgba(65, 57, 57, 0.623); */
-    color: rgb(245, 206, 101);
-    border: groove rgb(245, 245, 245, 0.2);
-    padding: 20px;
-    margin: 50px;    
+    color: rgb(245, 206, 101);   
 }
 
 #selected {
     color: whitesmoke;
-    border: groove whitesmoke
 }
 
 a {
     text-decoration: none;
 }
 
+.textoPaginaInicial {
+    display: inline-block;
+    margin: 50px 0px 50px 0px;
+}
+
 .main {
-    display: inline;
     color: rgb(235, 198, 96);
     font-size: 22px;
     font-family:'Courier New', Courier, monospace;
-    margin: 100px
+    margin: 10px
 }
 
 
 .footer {
-    position: relative;
+    margin-top: 50px;
+    position: absolute;
     bottom: 0px;
     width: 100%;
 }
@@ -53,14 +52,24 @@ a {
 }
 
 #foto-de-perfil {
+    text-align: right;
+    display: inline;
     height: 300px;
-    margin: 50px 0px 0px 50px
+    margin-top: 15px;
 }
 
 .corLista {
     color: whitesmoke;
 }
 
-.textoInicial {
-    margin-left: 500px;
+.tamanhoBotoes {
+    height: 210px;
+}
+.botaoProjeto {
+    height: 250px;
+}
+
+.form {
+    color: rgb(255, 217, 0);
+    font-size: 20px;
 }
