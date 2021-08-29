@@ -66,10 +66,12 @@ a {
     height: 210px;
 }
 .botaoProjeto {
-    height: 250px;
+    margin-top: 50px;
+    height: 200px;
 }
 
 .form {
     color: rgb(255, 217, 0);
     font-size: 20px;
 }
+
