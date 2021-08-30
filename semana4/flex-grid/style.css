@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body */
+
+body {
+min-height: 100vh;
+}
+
+/* Body */
+
+
+/* Header container */
+.header-container{
+    background-color:mediumvioletred ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header > div > div > h3 {
+    display: inline;
+    align-items:flex-start;
+    margin-left: 20px;
+}
+
+header > div > div > img {
+    width: 20px;
+}
+
+header > div > button {
+    display: flex;
+    align-items: center;
+}
+/* Header container */
+
+/* Menu container */
+nav {
+    padding: 10px;
+    background-color:#f2d0e0 ;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+
+}
+
+img {
+    width: 20px;
+    margin-right: 10px;
+}
+nav > div {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.nav-link {
+    display: flex;
+    margin: 10px;
+}
+
+/* Menu container */
+/* Main container */
+
+main {
+    display: flex;
+    min-height: 100vh;
+
+}
+
+/* Main container */
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    padding: 20px;
+}
+
+section > div > img{
+    width: 200px;
+    /* border-left:darkgray ; */
+}
+
+section > div > p {
+    font-size: 14px;
+    /* border:darkgray ; */
+}
+
+section > div {
+    box-shadow:2px 3px 4px 2px darkgrey;
+}
+
+
+
+/* Footer container */
+footer {
+    background-color:mediumvioletred ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+
+
+/* Footer container */
