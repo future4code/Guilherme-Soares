@@ -127,3 +127,14 @@ footer > img {
     margin: 0px 10px;
 }
 
+footer>p {
+    color: white;
+    margin: 0px 15px; 
+    font-size: larger;
+}
+
+h2 {
+    color: white;
+    margin-left: 15px;
+}
+
