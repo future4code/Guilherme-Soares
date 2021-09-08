@@ -1,0 +1,77 @@
+* {
+    background-color: black;
+    margin: 0px;    
+}
+
+.header {
+    background-color: black;
+}
+
+.menu {
+    margin: 0px
+}
+
+.menu a{
+    color: rgb(245, 206, 101);   
+}
+
+#selected {
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+}
+
+.textoPaginaInicial {
+    display: inline-block;
+    margin: 50px 0px 50px 0px;
+}
+
+.main {
+    color: rgb(235, 198, 96);
+    font-size: 22px;
+    font-family:'Courier New', Courier, monospace;
+    margin: 10px
+}
+
+
+.footer {
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer a {
+    color: rgb(245, 206, 101);
+    border: groove rgb(245, 245, 245, 0.2);
+    padding: 20px;
+    margin: 0px 100px 0px 100px; 
+
+}
+
+#foto-de-perfil {
+    text-align: right;
+    display: inline;
+    height: 300px;
+    margin-top: 15px;
+}
+
+.corLista {
+    color: whitesmoke;
+}
+
+.tamanhoBotoes {
+    height: 210px;
+}
+.botaoProjeto {
+    margin-top: 50px;
+    height: 200px;
+}
+
+.form {
+    color: rgb(255, 217, 0);
+    font-size: 20px;
+}
+
