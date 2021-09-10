@@ -42,11 +42,37 @@ const PostPhoto = styled.img`
 
 class Post extends React.Component {
   state = {
+    arrayPosts: [
+      {
+        nomeUsuario: "Paulinha",
+        fotoUsuario: "https://picsum.photos/50/50",
+        fotoPost: "https://picsum.photos/200/150",
+      },
+      {
+        nomeUsuario: "Maluquinha",
+        fotoUsuario: "https://picsum.photos/50/50",
+        fotoPost: "https://picsum.photos/200/150",
+      },
+      {
+        nomeUsuario: "Doidinha",
+        fotoUsuario: "https://picsum.photos/50/50",
+        fotoPost: "https://picsum.photos/200/150",
+      },
+    ],
+
     curtido: false,
     numeroCurtidas: 0,
     comentando: false,
     numeroComentarios: 0,
   };
+
+  arrayPosts = [
+    {
+      nomeUsuario: "",
+      fotoUsuario: "",
+      fotoPost: "",
+    },
+  ];
 
   onClickCurtida = () => {
     if (this.state.curtido === false) {
@@ -91,6 +117,15 @@ class Post extends React.Component {
         <SecaoComentario aoEnviar={this.aoEnviarComentario} />
       );
     }
+
+    const listaDeComponentes = this.state.arrayPosts.map((componente) => {
+      return (
+        <p>
+          {componente.nomeUsuario} - {componente.fotoUsuario} -
+          {componente.fotoPost}
+        </p>
+      );
+    });
 
     return (
       <PostContainer>
